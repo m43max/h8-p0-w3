@@ -2,7 +2,7 @@ function perkalianUnik(arr) {
     var out = []
     for(var i=0; i<arr.length; i++){
         var product = 1
-        for(j=0; j<arr.length; j++){
+        for(var j=0; j<arr.length; j++){
             if(j!==i){
                 product *= arr[j]
             }
