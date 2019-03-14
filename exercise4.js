@@ -3,6 +3,7 @@ function dataHandling2(arr){
     arr.splice(2,1,"Provinsi Bandar Lampung")
     arr.splice(4,2,"Pria", "SMA Internasional Metro")
     var tanggal = arr[3].split("/")
+    var tanggalf = tanggal.join("-")
     var namabulan
     switch (tanggal[1]){    //menulis nama bulan
         case "01": namabulan = "Januari"
@@ -35,7 +36,7 @@ function dataHandling2(arr){
     console.log(arr)
     console.log(namabulan)
     console.log(tanggal)
-    console.log(tanggal.join("-"))    //join tanggal, bulan and tahun, memisahkannya dengan char "-"
+    console.log(tanggalf)    //join tanggal, bulan and tahun, memisahkannya dengan char "-"
     console.log(arr[1].slice(0,15))    //membataskan nama sebanyak 15 karakter
 }
 
